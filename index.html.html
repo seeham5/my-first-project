@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق الصحة واللياقة البدنية</title>
+    <style>
+        /* تصميم الصفحة */
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        /* ترويسة الصفحة */
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* تصميم النموذج */
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* تصميم الجدول */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* تصميم قائمة النصائح */
+        ul {
+            list-style-type: disc;
+            padding: 0 20px;
+        }
+
+        ul li {
+            margin: 8px 0;
+        }
+
+        /* إعدادات إضافية لتوسيط العناصر */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>تطبيق الصحة واللياقة البدنية</h1>
+
+        <!-- قسم إدخال بيانات المستخدم -->
+        <h2>أدخل بياناتك الصحية</h2>
+        <form action="#">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" placeholder="أدخل اسمك">
+
+            <label for="age">العمر:</label>
+            <input type="number" id="age" name="age" placeholder="أدخل عمرك">
+
+            <label for="weight">الوزن (كجم):</label>
+            <input type="number" id="weight" name="weight" placeholder="أدخل وزنك">
+
+            <label for="height">الطول (سم):</label>
+            <input type="number" id="height" name="height" placeholder="أدخل طولك">
+
+            <input type="submit" value="أدخل بياناتي">
+        </form>
+
+        <!-- جدول الأهداف اليومية -->
+        <h2>أهدافك اليومية</h2>
+        <table>
+            <tr>
+                <th>النشاط</th>
+                <th>المدة الموصى بها</th>
+                <th>ملاحظات</th>
+            </tr>
+            <tr>
+                <td>المشي</td>
+                <td>30 دقيقة</td>
+                <td>حاول المشي يوميًا لتحسين اللياقة</td>
+            </tr>
+            <tr>
+                <td>شرب الماء</td>
+                <td>8 أكواب</td>
+                <td>يُنصح بشرب الماء بانتظام طوال اليوم</td>
+            </tr>
+            <tr>
+                <td>تمارين القوة</td>
+<td>15 دقيقة</td>
+                <td>مرتين أسبوعيًا على الأقل</td>
+            </tr>
+            <tr>
+                <td>النوم</td>
+                <td>7-8 ساعات</td>
+                <td>النوم الجيد يعزز الصحة العامة</td>
+            </tr>
+        </table>
+
+        <!-- قسم نصائح صحية ثابتة -->
+        <h2>نصائح للحفاظ على صحتك</h2>
+        <ul>
+            <li>حافظ على نظام غذائي متوازن يحتوي على جميع العناصر الغذائية.</li>
+            <li>احرص على تناول وجبات صغيرة خلال اليوم لتجنب الشعور بالجوع الشديد.</li>
+            <li>مارس التمارين الرياضية بانتظام لتحسين اللياقة البدنية.</li>
+            <li>حافظ على ترطيب جسمك بشرب الماء بانتظام.</li>
+            <li>نم جيدًا وابتعد عن السهر للحفاظ على طاقة جيدة خلال النهار.</li>
+        </ul>
+    </div>
+</body>
+</html>
